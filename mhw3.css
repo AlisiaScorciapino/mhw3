@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    width: 100vw;
+    }
+
+#testa{
+    background-image: url(sfondo1.jpeg);
+    background-size:cover;
+    background-position:center;
+    height:500px;
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-style:normal;
+    color:aliceblue;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+}
+
+#titolo{
+    font-family:'Inter', sans-serif;
+    font-size:80px;
+    max-width:780px;
+    text-align: center;
+    z-index: 1;
+    color:inherit;
+}
+
+#links {  
+    position:absolute;
+    top:0px;
+    right:5px;
+
+    display:flex;
+}
+
+#links a {
+    font-family:'Roboto',sans-serif;
+    border: 1px solid white;
+    padding:6px;
+    margin:5px;
+    font-size: 25px;
+    text-decoration:none;
+    color: inherit;
+}
+
+#links a:hover{
+    background-color:rgba(124, 116, 153, 0.594);
+}
+
+#profile{
+    display: flex;
+    position:relative;
+    justify-content:center;
+    top:-50px;
+}
+
+#profile img{
+    position:absolute;
+    height:100px;
+    width:100px;
+    border-radius:50px;
+}
+
+#profile h2{
+    position:absolute;
+    top:90px;
+    color:black;
+    font-size:17px;
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+#id-section{
+    display:flex;
+    margin-top:120px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+	width: 66%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#album-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+#album-view .album {
+    margin: 10px;
+    border: 1px solid slategray;
+    padding: 10px;
+    max-width: 230px;  
+    max-height: 230px; 
+    display: flex;
+    flex-direction:column;
+    cursor: pointer;
+    background-color: white; 
+    }
+
+#menu{
+    position:absolute;
+    top:0px;
+    right:5px;
+
+    display:none;
+}
+
+@media(max-width:600px){
+    #links{
+        display:none;
+    }
+    #menu{
+        display:block;
+    }
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    margin:3px 0px;
+    background-color:aliceblue;
+
+}
+
+#id-footer{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(12, 5, 42);
+    color:aliceblue;
+    padding:75px;
+}
